@@ -5,12 +5,16 @@ import Card from  './components/Card';
 import Carousel from './components/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
     <div className="App">
       <header id='Nav'>
         <Navbar />
       </header>
+      <div>
+        <Carousel />
+      </div>
       <div className='Cards'>
         <Card />
         <Card />
