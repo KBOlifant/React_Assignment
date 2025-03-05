@@ -59,57 +59,59 @@
 
 
 
-/*acocrdion */
-
 /* General Accordion Styling */
 .accordion {
   width: 100%;
   max-width: 800px;
   margin: 50px auto;
   font-family: 'Arial', sans-serif;
-  background-color: #2c3e50; /* Dark background color for the entire accordion */
-  border-radius: 10px; /* Rounded corners for the accordion container */
+  background-color: transparent; /* Transparent background for the entire accordion */
   overflow: hidden;
 }
 
 .accordion-item {
-  background-color: #34495e; /* Slightly lighter background color for each item */
-  margin-bottom: 5px; /* Reduced margin between items */
+  background-color: #ADD8E6; /* Lighter blue for each item */
+  margin-bottom: 10px; /* Increased margin between items for more space */
   border: none; /* Remove borders */
+  border-radius: 15px; /* Rounded corners for each item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a blocky effect */
 }
 
 .accordion-header {
-  background-color: #34495e; /* Match the item background color */
-  padding: 15px;
+  background-color: #68BDDB; /* SUFF color for headers */
+  padding: 10px 15px; /* Increased padding for a blocky look */
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px; /* Slightly larger font size */
   font-weight: bold;
-  color: #ecf0f1; /* Light text color */
+  color: #224172; /* DEEP color for text */
   transition: background-color 0.3s ease;
   border: none; /* Remove borders */
+ 
 }
 
 .accordion-header:hover {
-  background-color: #40576b; /* Slightly lighter hover color */
+  background-color: #009DDE; /* WAVES color for hover */
 }
 
 .accordion-body {
-  padding: 15px;
-  background-color: #34495e; /* Match the item background color */
-  color: #ecf0f1; /* Light text color */
+  padding: 10px 15px; /* Increased padding for a blocky look */
+  background-color: #ADD8E6; /* Lighter blue for body */
+  color: #0167AF; /* SAPPHIRE color for text */
   border: none; /* Remove borders */
+
 }
 
 .accordion-body p {
   font-size: 16px;
   line-height: 1.6;
-  color: #ecf0f1; /* Light text color */
+  color: #0167AF; /* SAPPHIRE color for text */
+  margin: 0 0 15px 0; /* Increased margin between paragraphs */
 }
 
 /* Image Styling */
 .accordion-body img {
   display: block;
-  margin: 0 auto 15px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 20px auto; /* Increased margin below the image */
+  border-radius: 15px; /* More rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a blocky effect */
 }

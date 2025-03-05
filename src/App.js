@@ -37,6 +37,7 @@ function App() {
       </Row>
 
       <div className='Accordion'>
+      <h1>Factions</h1>
         <Accordion />
       </div>
       
