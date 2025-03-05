@@ -36,10 +36,7 @@ function App() {
 
       <div className='subscribe-form'>
         <FormComponent />
-        </div>
-
-      
-      
+      </div>
     </div>
   );
 }
