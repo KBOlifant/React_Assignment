@@ -40,7 +40,8 @@
 
 .Cards{
   padding-top: 100px;
-  gap: 50px;
+  gap: 100px;
+  padding: 100px 100px 100px 100px;
 }
 
 #card1{
@@ -56,11 +57,6 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
 
 /*form*/
 
@@ -130,11 +126,12 @@
   background-color: transparent; /* Transparent background for the entire accordion */
   overflow: hidden;
   border-radius: 15px; /* Rounded corners for the entire accordion */
-
+ 
 }
 
+
 .accordion-item {
-  background-color: #505050; /* Light purple for each item */
+  background-color: #1f1f1f; /* Light purple for each item */
   margin-bottom: 0; /* Remove margin to make items stick together */
   border: none; /* Remove borders */
   border-radius: 0; /* Remove rounded corners for individual items */
@@ -151,20 +148,28 @@
   border-bottom-right-radius: 15px;
 }
 
-.accordion-header {
-  background-color: #636363; /* Medium purple for headers */
-  padding: 15px 20px; /* Increased padding for a blocky look */
-  cursor: pointer;
-  font-size: 20px; /* Slightly larger font size */
+button.accordion-button {
+  background-color: #505050; /* Dark purple for buttons */
+  color: #000000; /* White text color */
+  font-size: 18px;
   font-weight: bold;
-  color: #FFFFFF; /* White text for contrast */
-  transition: background-color 0.3s ease;
+  text-align: left;
+  padding: 15px 20px; /* Increased padding for a blocky look */
   border: none; /* Remove borders */
+  border-bottom: 1px solid #505050; /* Add a border between items */
+  border-radius: 0; /* Remove rounded corners for buttons */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.accordion-header:hover {
-  background-color: #747474; /* Darker purple for hover */
+button.accordion-button:hover {
+  background-color: #0a0a0a; /* Darker purple on hover */
 }
+
+
 
 
 .accordion-body {
