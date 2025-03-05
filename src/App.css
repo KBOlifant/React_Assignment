@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1f1f1f;
 }
 
 .App-logo {
@@ -11,6 +12,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.carouselSection{
+  background-color: #1f1f1f;
 }
 
 .App-header {
@@ -28,6 +33,21 @@
   color: #61dafb;
 }
 
+.PageTitle{
+  color: rgb(185, 185, 0);
+  margin: 50px;
+}
+
+.Cards{
+  padding-top: 100px;
+  gap: 50px;
+}
+
+#card1{
+  color: #1f1f1f;
+  background-color: red;;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +55,136 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+/*form*/
+
+/* SubscribeForMore.css */
+
+.subscribe-form {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.subscribe-form h2 {
+  font-size: 24px;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-form .form-label {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.subscribe-form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.subscribe-form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/*accordion*/
+.accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+  background-color: transparent; /* Transparent background for the entire accordion */
+  overflow: hidden;
+  border-radius: 15px; /* Rounded corners for the entire accordion */
+
+}
+
+.accordion-item {
+  background-color: #505050; /* Light purple for each item */
+  margin-bottom: 0; /* Remove margin to make items stick together */
+  border: none; /* Remove borders */
+  border-radius: 0; /* Remove rounded corners for individual items */
+  box-shadow: none; /* Remove individual shadows */
+}
+
+.accordion-item:first-child {
+  border-top-left-radius: 15px; /* Round top corners of the first item */
+  border-top-right-radius: 15px;
+}
+
+.accordion-item:last-child {
+  border-bottom-left-radius: 15px; /* Round bottom corners of the last item */
+  border-bottom-right-radius: 15px;
+}
+
+.accordion-header {
+  background-color: #636363; /* Medium purple for headers */
+  padding: 15px 20px; /* Increased padding for a blocky look */
+  cursor: pointer;
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: bold;
+  color: #FFFFFF; /* White text for contrast */
+  transition: background-color 0.3s ease;
+  border: none; /* Remove borders */
+}
+
+.accordion-header:hover {
+  background-color: #747474; /* Darker purple for hover */
+}
+
+
+.accordion-body {
+  padding: 15px 20px; /* Increased padding for a blocky look */
+  background-color: #dfdfdf; /* Light purple for body */
+  color: #0a0a0a; /* Dark purple for text */
+  border: none; /* Remove borders */
+}
+
+.accordion-body p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f1f1f; /* Dark purple for text */
+  margin: 0 0 15px 0; /* Increased margin between paragraphs */
+}
+
+/* Image Styling */
+.accordion-body img {
+  display: block;
+  margin: 0 auto 20px auto; /* Increased margin below the image */
+  border-radius: 15px; /* More rounded corners for images */
+
 }

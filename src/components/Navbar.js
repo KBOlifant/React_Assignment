@@ -2,28 +2,29 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
-function BasicExample() {
+import Logo from '../assets/swLOGO.png';
+//<Navbar.Brand>Star Wars</Navbar.Brand>
+function BasicNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar variant='dark' expand="md" className="bg-dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <img src={Logo} width='100px' className='me-5'></img>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Nav.Link href="#link">Info</Nav.Link>
+            <NavDropdown variant='dark' title="About" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">About The Developers</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">About The Movies</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="https://www.starwars.com/">
+                Star Wars Website
               </NavDropdown.Item>
             </NavDropdown>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -31,4 +32,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default BasicNavbar;
