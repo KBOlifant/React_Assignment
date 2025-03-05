@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import NewHopePoster from '../assets/carousel/ANewHopeEpisode4.webp';
-import EmpireStrikesBackPoster from '../assets/EmpireStrikesBackPoster.jpeg';  
-import ReturnOfTheJediPoster from '../assets/ReturnoftheJediPoster.jpeg';
-import PhantomMenacePoster from '../assets/PhantomMenacePoster.jpeg';
-import AttackOfTheClonesPoster from '../assets/AttackoftheClonesPoster.jpeg';
-import RevengeOfTheSithPoster from '../assets/RevengeoftheSithPoster.jpeg';
-import ForceAwakensPoster from '../assets/ForceAwakensPoster.jpeg';
-import LastJediPoster from '../assets/LastJediPoster.jpeg';
-import RiseOfSkywalkerPoster from '../assets/RiseofSkywalkerPoster.jpeg';
+import EmpireStrikesBackPoster from '../assets/carousel/TheEmpireStrikesBackEpisode5.jpg';  
+import ReturnOfTheJediPoster from '../assets/carousel/ReturnOfTheJediEpisode6.webp';
+import PhantomMenacePoster from '../assets/carousel/ThePhantomMenaceEpisode1.webp';
+import AttackOfTheClonesPoster from '../assets/carousel/AttachOfTheClonesEpisode2.webp';
+import RevengeOfTheSithPoster from '../assets/carousel/RevengeOfTheSithEpisode3.jpeg';
+import ForceAwakensPoster from '../assets/carousel/TheForceAwakensEpisode7.webp';
+import LastJediPoster from '../assets/carousel/TheLastJediEpisode8.webp';
+import RiseOfSkywalkerPoster from '../assets/carousel/TheRiseOfSkyWalkerEpisode9.webp';
 
 const main_Carousel = () => {
   const carouselItems = [
