@@ -14,16 +14,12 @@ import RebelsPoster from '../assets/MoviePosters/star wars rebels poster.jpg';
 
 const CardInfo = () => {
   const cardDetails = [
-    {image: AhsokePoster, title: 'Ahsoka', 'text': 'stuff stuff stuff idk'},
-    {image: AndorPoster, title: 'Andor', 'text': 'stuff stuff stuff idk'},
-    {image: ObiWanPoster, title: 'Obi-Wan Kenobi', 'text': 'stuff stuff stuff idk'},
-    {image: SkeletonCrewPoster, title: 'Skeleton Crew', 'text': 'stuff stuff stuff idk'},
-    {image: SoloPoster, title: 'Solo Star Wars', 'text': 'stuff stuff stuff idk'},
-    {image: NewHopePoster, title: 'Start Wars A New Hope', 'text': 'stuff stuff stuff idk'},
-    {image: ResistancePoster, title: 'Star Wars Resistance', 'text': 'stuff stuff stuff idk'},
-    {image: JediPoster, title: 'Return Of The Jedi', 'text': 'stuff stuff stuff idk'},
-    {image: SithiPoster, title: 'Star Wars Revenge of Sith', 'text': 'stuff stuff stuff idk'},
-    {image: RebelsPoster, title: 'Star Wars Rebels', 'text': 'stuff stuff stuff idk'}
+    {image: AhsokePoster, title: 'Ahsoka', 'text': 'After the fall of the Galactic Empire, the former Jedi Ahsoka Tano investigates an emerging threat that endangers a vulnerable galaxy.'},
+    {image: AndorPoster, title: 'Andor', 'text': 'Prequel series to Star Wars \'Rogue One\'. In an dangerous era, Cassian embarks on a path destined to turn him into a Rebel hero.'},
+    {image: ObiWanPoster, title: 'Obi-Wan Kenobi', 'text': 'Jedi Master Obi-Wan Kenobi must save young Leia after she is kidnapped, while being pursued by Imperial Inquisitors and Darth Vader.'},
+    {image: SkeletonCrewPoster, title: 'Skeleton Crew', 'text': 'The four kids make a mysterious discovery on their home planet that leads them to get lost in a strange and dangerous galaxy.'},
+    {image: SoloPoster, title: 'Solo Star Wars', 'text': 'Adventuring in the criminal underworld, Han Solo meets his future co-pilot Chewbacca and Lando Calrissian years before joining the Rebel Alliance.'},
+    {image: RebelsPoster, title: 'Star Wars Rebels', 'text': 'The crew of the spaceship Ghost defends those who cannot fight for themselves against the Empire, providing the spark for a rebellion.'}
   ];
 
   const displayCard = (card, index) => {
