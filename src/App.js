@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Card from  './components/Card';
 import Carousel from './components/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function App() {
@@ -12,14 +14,26 @@ function App() {
       <header id='Nav'>
         <Navbar />
       </header>
+      <div className='PageTitle'>
+        <h1>May the force be with you</h1>
+      </div>
       <div className="carouselSection">
         <Carousel />
       </div>
-      <div className='Cards'>
+      <Row className='Cards justify-content-md-center'>
         <Card />
         <Card />
         <Card />
-      </div>
+        <Card />
+      </Row>
+
+      <Row className='Cards justify-content-md-center'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Row>
+      
     </div>
   );
 }
