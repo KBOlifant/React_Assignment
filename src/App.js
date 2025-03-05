@@ -23,11 +23,21 @@ function App() {
       <div className="carouselSection">
         <Carousel />
       </div>
-      
-      <Card />
+      <Row className='Cards justify-content-md-center'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Row>
+
+      <Row className='Cards justify-content-md-center'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Row>
 
       <div className='accordion'>
-      
         <Accordion />
       </div>
 
