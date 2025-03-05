@@ -24,7 +24,7 @@ const main_Carousel = () => {
   const displayCarousel = (carousel, index) => {
     return(
       <Carousel.Item key={index}>
-        <Carousel.Img src={carousel.image} width={1500} height={650} />
+        <img src={carousel.image} width={1500} height={650} />
         <Carousel.Caption>
           <h3>{carousel.title}</h3>
           <p>{carousel.text}</p>
