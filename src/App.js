@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Accordion from './components/Accordion';
 import Image from 'react-bootstrap/Image';
+import FormComponent from './components/InteractiveFormComponent';
 
 
 function App() {
@@ -36,10 +37,16 @@ function App() {
         <Card />
       </Row>
 
-      <div className='Accordion'>
-      <h1>Factions</h1>
+      <div className='accordion'>
+      
         <Accordion />
       </div>
+
+      <div className='subscribe-form'>
+        <FormComponent />
+        </div>
+
+      
       
     </div>
   );
