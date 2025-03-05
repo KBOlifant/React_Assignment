@@ -22,19 +22,8 @@ function App() {
       <div className="carouselSection">
         <Carousel />
       </div>
-      <Row className='Cards justify-content-md-center'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Row>
-
-      <Row className='Cards justify-content-md-center'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Row>
+      
+      <Card />
 
       <div className='Accordion'>
         <Accordion />
