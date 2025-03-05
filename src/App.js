@@ -6,6 +6,8 @@ import Carousel from './components/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Accordion from './components/Accordion';
+import Image from 'react-bootstrap/Image';
 
 
 function App() {
@@ -33,6 +35,10 @@ function App() {
         <Card />
         <Card />
       </Row>
+
+      <div className='Accordion'>
+        <Accordion />
+      </div>
       
     </div>
   );
