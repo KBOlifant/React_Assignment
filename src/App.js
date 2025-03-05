@@ -18,7 +18,7 @@ function App() {
         <Navbar />
       </header>
       <div className='PageTitle'>
-        <h1>May the force be with you</h1>
+        <h1>May The Force Be With You</h1>
       </div>
       <div className="carouselSection">
         <Carousel />
