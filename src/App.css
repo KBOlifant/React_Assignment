@@ -41,7 +41,7 @@
 .Cards{
   padding-top: 100px;
   gap: 100px;
-  padding: 100px 100px 100px 100px;
+  padding: 100px 100px 0px 100px;
 }
 
 #card1{
@@ -93,6 +93,10 @@
   font-size: 16px;
 }
 
+.blackout{
+  filter: brightness(75%);
+}
+
 .subscribe-form .form-control:focus {
   border-color: #007bff;
   outline: none;
@@ -115,18 +119,16 @@
 }
 
 
-
-
 /*accordion*/
 .accordion {
   width: 100%;
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0px auto;
   font-family: 'Arial', sans-serif;
   background-color: transparent; /* Transparent background for the entire accordion */
   overflow: hidden;
   border-radius: 15px; /* Rounded corners for the entire accordion */
- 
+  padding-bottom: 50px;
 }
 
 

@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import NewHopePoster from '../assets/NewHopePoster.jpeg';
+import NewHopePoster from '../assets/carousel/ANewHopeEpisode4.webp';
 import EmpireStrikesBackPoster from '../assets/EmpireStrikesBackPoster.jpeg';  
 import ReturnOfTheJediPoster from '../assets/ReturnoftheJediPoster.jpeg';
 import PhantomMenacePoster from '../assets/PhantomMenacePoster.jpeg';
@@ -24,11 +24,12 @@ const main_Carousel = () => {
   const displayCarousel = (carousel, index) => {
     return(
       <Carousel.Item key={index}>
-        <img src={carousel.image} width={1500} height={650} />
-        <Carousel.Caption>
-          <h3>{carousel.title}</h3>
-          <p>{carousel.text}</p>
-        </Carousel.Caption>
+          <img src={carousel.image} width={1500} height={650} className='blackout' />
+        
+          <Carousel.Caption>
+            <h3>{carousel.title}</h3>
+            <p>{carousel.text}</p>
+          </Carousel.Caption>
       </Carousel.Item>
     )
   }
