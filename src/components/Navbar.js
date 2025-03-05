@@ -3,13 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/swLOGO.png';
-////<img src={Logo} width='100px' className='position-absolute start-100'></img>
+//<Navbar.Brand>Star Wars</Navbar.Brand>
 function BasicNavbar() {
   return (
     <Navbar variant='dark' expand="md" className="bg-dark">
       <Container>
+      <img src={Logo} width='100px' className='me-5'></img>
         
-        <Navbar.Brand>Star Wars</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

@@ -12,7 +12,7 @@ function App() {
       <header id='Nav'>
         <Navbar />
       </header>
-      <div>
+      <div className="carouselSection">
         <Carousel />
       </div>
       <div className='Cards'>

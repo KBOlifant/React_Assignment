@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1f1f1f;
 }
 
 .App-logo {
@@ -11,6 +12,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.carouselSection{
+  background-color: #1f1f1f;
 }
 
 .App-header {
@@ -26,6 +31,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Cards{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  gap: 250px;
 }
 
 @keyframes App-logo-spin {
