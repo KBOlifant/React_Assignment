@@ -142,9 +142,9 @@
 
 /* Accordion Button */
 button.accordion-button {
-  background-color: #f1f1f1; /* Slightly darker grey for buttons */
-  color: #333; /* Dark text color */
-  font-size: 18px;
+  position: relative; /* Needed for pseudo-element positioning */
+  color: #bb0000; /* Dark text color */
+  font-size: 20px;
   font-weight: bold;
   text-align: left;
   padding: 15px 20px; /* Increased padding for a blocky look */
@@ -155,6 +155,22 @@ button.accordion-button {
   align-items: center;
   width: 100%;
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+  z-index: 1; /* Ensure the text stays above the pseudo-element */
+}
+
+button.accordion-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(assets/rust2.jpg); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Place it behind the text */
+  filter: brightness(0.8); /* Adjust brightness here (0.8 = 80% brightness) */
 }
 
 button.accordion-button:hover {
