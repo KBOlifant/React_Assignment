@@ -7,8 +7,8 @@ function SubscribeForMore() {
   return (
     <Form className="subscribe-form">
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <h2>Subscribe for more news</h2>
-        <Form.Label>Email address</Form.Label>
+        <h2>Subscribe For More News</h2>
+        <Form.Label>Email Address</Form.Label>
         <Form.Control type="email" placeholder="name@example.com" />
       </Form.Group>
 
