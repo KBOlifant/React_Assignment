@@ -104,19 +104,19 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.subscribe-button {
+.button {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #036742;
   border: none;
   border-radius: 4px;
   color: white;
   cursor: pointer;
 }
 
-.subscribe-button:hover {
-  background-color: #0056b3;
+.button:hover {
+  background-color: #004029;
 }
 
 

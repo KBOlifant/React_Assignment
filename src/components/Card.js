@@ -31,7 +31,7 @@ const CardInfo = () => {
           <Card.Text>
             {card.text}
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="success" className="button">Go somewhere</Button>
         </Card.Body>
       </Card>
     )

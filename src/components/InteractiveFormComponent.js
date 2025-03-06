@@ -12,7 +12,7 @@ function SubscribeForMore() {
         <Form.Control type="email" placeholder="name@example.com" />
       </Form.Group>
 
-      <Button variant="primary" className="subscribe-button">Subscribe</Button>
+      <Button variant="success" className="button">Subscribe</Button>
     </Form>
   );
 }
