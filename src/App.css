@@ -41,12 +41,11 @@
 .Cards{
   padding-top: 100px;
   gap: 100px;
-  padding: 100px 100px 0px 100px;
+  padding: 100px 100px 100px 100px;
 }
 
-#card1{
-  color: #1f1f1f;
-  background-color: red;;
+.cardSection{
+  background-color: #1b1b1b;
 }
 
 @keyframes App-logo-spin {
@@ -65,18 +64,25 @@
 .subscribe-form {
   max-width: 60%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
+  padding-bottom: 60px;
   background-color: #000000;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
+.sub-form{
+  padding-bottom: 150px;
+
+}
+
 .subscribe-form h2 {
-  font-size: 24px;
-  color: #ccc;
+  font-size: 34px;
   text-align: center;
   margin-bottom: 20px;
+  color: rgb(185, 185, 0);
+
 }
 
 .subscribe-form .form-label {
@@ -103,88 +109,91 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.subscribe-button {
+.button {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #036742;
   border: none;
   border-radius: 4px;
   color: white;
   cursor: pointer;
 }
 
-.subscribe-button:hover {
-  background-color: #0056b3;
+.button:hover {
+  background-color: #004029;
 }
 
 
-/*accordion*/
+
+/* Accordion */
 .accordion {
   width: 100%;
   max-width: 800px;
-  margin: 0px auto;
+  margin: 0 auto;
   font-family: 'Arial', sans-serif;
   background-color: transparent; /* Transparent background for the entire accordion */
   overflow: hidden;
-  border-radius: 15px; /* Rounded corners for the entire accordion */
   padding-bottom: 50px;
 }
 
-
+/* Accordion Item */
 .accordion-item {
-  background-color: #1f1f1f; /* Light purple for each item */
-  margin-bottom: 0; /* Remove margin to make items stick together */
-  border: none; /* Remove borders */
-  border-radius: 0; /* Remove rounded corners for individual items */
-  box-shadow: none; /* Remove individual shadows */
+  background-color: #f9f9f9; /* Light grey for each item */
+  margin-bottom: 10px; /* Add margin between items */
+  border: 1px solid #ddd; /* Light border for each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.accordion-item:first-child {
-  border-top-left-radius: 15px; /* Round top corners of the first item */
-  border-top-right-radius: 15px;
-}
-
-.accordion-item:last-child {
-  border-bottom-left-radius: 15px; /* Round bottom corners of the last item */
-  border-bottom-right-radius: 15px;
-}
-
+/* Accordion Button */
 button.accordion-button {
-  background-color: #505050; /* Dark purple for buttons */
-  color: #000000; /* White text color */
-  font-size: 18px;
+  position: relative; /* Needed for pseudo-element positioning */
+  color: #bb0000; /* Dark text color */
+  font-size: 20px;
   font-weight: bold;
   text-align: left;
   padding: 15px 20px; /* Increased padding for a blocky look */
   border: none; /* Remove borders */
-  border-bottom: 1px solid #505050; /* Add a border between items */
-  border-radius: 0; /* Remove rounded corners for buttons */
+  border-bottom: 1px solid #ddd; /* Add a border between items */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+  z-index: 1; /* Ensure the text stays above the pseudo-element */
+}
+
+button.accordion-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(assets/rust2.jpg); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Place it behind the text */
+  filter: brightness(0.8); /* Adjust brightness here (0.8 = 80% brightness) */
 }
 
 button.accordion-button:hover {
-  background-color: #0a0a0a; /* Darker purple on hover */
+  background-color: #9c9c9c; /* Slightly darker grey on hover */
 }
 
-
-
-
+/* Accordion Body */
 .accordion-body {
   padding: 15px 20px; /* Increased padding for a blocky look */
-  background-color: #dfdfdf; /* Light purple for body */
-  color: #0a0a0a; /* Dark purple for text */
+  background-color: #fff; /* White background for body */
+  color: #333; /* Dark text color */
   border: none; /* Remove borders */
 }
 
 .accordion-body p {
   font-size: 16px;
   line-height: 1.6;
-  color: #1f1f1f; /* Dark purple for text */
+  color: #333; /* Dark text color */
   margin: 0 0 15px 0; /* Increased margin between paragraphs */
 }
 
@@ -192,6 +201,5 @@ button.accordion-button:hover {
 .accordion-body img {
   display: block;
   margin: 0 auto 20px auto; /* Increased margin below the image */
-  border-radius: 15px; /* More rounded corners for images */
-
+  border-radius: 0; /* Remove rounded corners for images */
 }

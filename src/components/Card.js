@@ -24,14 +24,14 @@ const CardInfo = () => {
 
   const displayCard = (card, index) => {
     return(
-      <Card style={{ width: '18rem', borderRadius: '20px' }} key={index}>
+      <Card className='homeCards' style={{ width: '18rem', borderRadius: '20px'}} key={index}>
         <Card.Img variant="top" src={card.image} className='mt-3 rounded-4' />
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
           <Card.Text>
             {card.text}
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="success" className="button">Go somewhere</Button>
         </Card.Body>
       </Card>
     )
