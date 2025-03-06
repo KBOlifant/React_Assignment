@@ -41,12 +41,11 @@
 .Cards{
   padding-top: 100px;
   gap: 100px;
-  padding: 100px 100px 0px 100px;
+  padding: 100px 100px 100px 100px;
 }
 
-#card1{
-  color: #1f1f1f;
-  background-color: red;;
+.cardSection{
+  background-color: #1b1b1b;
 }
 
 @keyframes App-logo-spin {
@@ -65,11 +64,17 @@
 .subscribe-form {
   max-width: 60%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
+  padding-bottom: 60px;
   background-color: #000000;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+}
+
+.sub-form{
+  padding-bottom: 150px;
+
 }
 
 .subscribe-form h2 {

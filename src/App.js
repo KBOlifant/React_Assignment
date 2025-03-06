@@ -10,7 +10,6 @@ import Accordion from './components/Accordion';
 import Image from 'react-bootstrap/Image';
 import FormComponent from './components/InteractiveFormComponent';
 
-
 function App() {
   return (
     <div className="App">
@@ -24,7 +23,9 @@ function App() {
         <Carousel />
       </div>
 
-      <Card />
+      <div className='cardSection' >
+        <Card />
+      </div>
 
       <div className='PageTitle'>
         <h1>Factions</h1>
@@ -34,7 +35,7 @@ function App() {
         <Accordion />
       </div>
 
-      <div className='subscribe-form'>
+      <div className='sub-form'>
         <FormComponent />
         </div>
 
